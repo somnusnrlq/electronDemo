@@ -68,5 +68,5 @@ mainWindow = new BrowserWindow({
 
 ## 实现功能
 - [x] 打开渲染进程新窗口
-- [x] 自定义菜单
+- [x] 自定义菜单(快捷键)
 - [x] 右键菜单
