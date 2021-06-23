@@ -3,6 +3,7 @@ const { remote} = require('electron')
 const { BrowserWindow } = require('electron').remote
 
 
+
 window.addEventListener('DOMContentLoaded', () => {
   const replaceText = (selector, text) => {
     const element = document.getElementById(selector)
@@ -17,6 +18,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 window.onload = function () {
   const btn = this.document.querySelector('#btn')
+ 
+
   btn.onclick = () => {
     alert(11)
     let newWin = new BrowserWindow({
@@ -44,3 +47,4 @@ window.addEventListener('contextmenu',function(e){
    //把菜单模板添加到右键菜单
    m.popup({window:remote.getCurrentWindow()})
 })
+

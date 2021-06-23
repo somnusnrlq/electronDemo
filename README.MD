@@ -66,7 +66,13 @@ mainWindow = new BrowserWindow({
 
 渲染进程打开新窗口需要对主进程的窗体的属性进行设置
 
+3. 使用Shell打开外面不浏览器无效
+ 
+  --需要在 webPreferences中开启webviewTag的属性--
+
 ## 实现功能
 - [x] 打开渲染进程新窗口
 - [x] 自定义菜单(快捷键)
 - [x] 右键菜单
+- [x] Shell打开外部浏览器
+

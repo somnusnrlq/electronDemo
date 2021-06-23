@@ -2,10 +2,10 @@ const { Menu,BrowserWindow } = require('electron')
 
 var template = [
   {
-    label: '凤来怡洗浴会所',
+    label: '首页',
     submenu: [
       {
-        label: '精品SPA',
+        label: '新窗口',
         accelerator:`ctrl+n`,
         click: () => {
            let win = new BrowserWindow({
@@ -19,12 +19,12 @@ var template = [
             })
         }
       },
-      { label: '泰式按摩' }
+      { label: '菜单1-2' }
     ]
   },
   {
-    label: '大浪淘沙洗浴中心',
-    submenu: [{ label: '牛奶玫瑰浴' }, { label: '爱情拍拍手' }]
+    label: '菜单2',
+    submenu: [{ label: '菜单2-1' }, { label: '菜单2-2' }]
   }
 ]
 

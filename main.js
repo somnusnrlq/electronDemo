@@ -27,13 +27,14 @@ function createWindow() {
       nodeIntegration: true,
       enableRemoteModule: true,
       contextIsolation: false,
+      // webviewTag:true,
       preload: path.join(__dirname, 'preload.js')
     }
   })
 
   // 开启开发工具
   win.webContents.openDevTools()
-  win.loadFile('index.html')
+  win.loadFile('demo3.html')
 
   // win.on('closed', () => {
   //   win = null
